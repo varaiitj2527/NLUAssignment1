@@ -1,1 +1,170 @@
+Processing: BoW (1-gram)
 
+Model: Logistic Regression
+              precision    recall  f1-score   support
+
+           0       1.00      0.94      0.97        79
+           1       0.96      1.00      0.98       107
+
+    accuracy                           0.97       186
+   macro avg       0.98      0.97      0.97       186
+weighted avg       0.97      0.97      0.97       186
+
+
+
+Model: SVM
+              precision    recall  f1-score   support
+
+           0       1.00      0.89      0.94        79
+           1       0.92      1.00      0.96       107
+
+    accuracy                           0.95       186
+   macro avg       0.96      0.94      0.95       186
+weighted avg       0.96      0.95      0.95       186
+
+
+Model: Random Forest
+              precision    recall  f1-score   support
+
+           0       1.00      0.97      0.99        79
+           1       0.98      1.00      0.99       107
+
+    accuracy                           0.99       186
+   macro avg       0.99      0.99      0.99       186
+weighted avg       0.99      0.99      0.99       186
+
+
+Processing: BoW (2-gram)
+
+Model: Logistic Regression
+              precision    recall  f1-score   support
+
+           0       1.00      0.90      0.95        79
+           1       0.93      1.00      0.96       107
+
+    accuracy                           0.96       186
+   macro avg       0.97      0.95      0.96       186
+weighted avg       0.96      0.96      0.96       186
+
+
+Model: SVM
+              precision    recall  f1-score   support
+
+           0       1.00      0.87      0.93        79
+           1       0.91      1.00      0.96       107
+
+    accuracy                           0.95       186
+   macro avg       0.96      0.94      0.94       186
+weighted avg       0.95      0.95      0.95       186
+
+
+Model: Random Forest
+              precision    recall  f1-score   support
+
+           0       1.00      0.92      0.96        79
+           1       0.95      1.00      0.97       107
+
+    accuracy                           0.97       186
+   macro avg       0.97      0.96      0.97       186
+weighted avg       0.97      0.97      0.97       186
+
+
+Processing: TF-IDF (1-gram)
+
+Model: Logistic Regression
+              precision    recall  f1-score   support
+
+           0       1.00      0.96      0.98        79
+           1       0.97      1.00      0.99       107
+
+    accuracy                           0.98       186
+   macro avg       0.99      0.98      0.98       186
+weighted avg       0.98      0.98      0.98       186
+
+
+
+Model: SVM
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99        79
+           1       0.99      1.00      1.00       107
+
+    accuracy                           0.99       186
+   macro avg       1.00      0.99      0.99       186
+weighted avg       0.99      0.99      0.99       186
+
+
+Model: Random Forest
+              precision    recall  f1-score   support
+
+           0       0.99      0.97      0.98        79
+           1       0.98      0.99      0.99       107
+
+    accuracy                           0.98       186
+   macro avg       0.98      0.98      0.98       186
+weighted avg       0.98      0.98      0.98       186
+
+
+Processing: TF-IDF (2-gram)
+
+Model: Logistic Regression
+              precision    recall  f1-score   support
+
+           0       1.00      0.94      0.97        79
+           1       0.96      1.00      0.98       107
+
+    accuracy                           0.97       186
+   macro avg       0.98      0.97      0.97       186
+weighted avg       0.97      0.97      0.97       186
+
+
+Model: SVM
+              precision    recall  f1-score   support
+
+           0       1.00      0.96      0.98        79
+           1       0.97      1.00      0.99       107
+
+    accuracy                           0.98       186
+   macro avg       0.99      0.98      0.98       186
+weighted avg       0.98      0.98      0.98       186
+
+
+Model: Random Forest
+              precision    recall  f1-score   support
+
+           0       1.00      0.91      0.95        79
+           1       0.94      1.00      0.97       107
+
+    accuracy                           0.96       186
+   macro avg       0.97      0.96      0.96       186
+weighted avg       0.96      0.96      0.96       186
+
+
+Final Results:
+            Feature                Model  Accuracy  F1 Score    Recall   
+0      BoW (1-gram)  Logistic Regression  0.973118  0.977169  1.000000  
+1      BoW (1-gram)                  SVM  0.951613  0.959641  1.000000   
+2      BoW (1-gram)        Random Forest  0.989247  0.990741  1.000000   
+3      BoW (2-gram)  Logistic Regression  0.956989  0.963964  1.000000   
+4      BoW (2-gram)                  SVM  0.946237  0.955357  1.000000   
+5      BoW (2-gram)        Random Forest  0.967742  0.972727  1.000000   
+6   TF-IDF (1-gram)  Logistic Regression  0.983871  0.986175  1.000000   
+7   TF-IDF (1-gram)                  SVM  0.994624  0.995349  1.000000   
+8   TF-IDF (1-gram)        Random Forest  0.983871  0.986047  0.990654   
+9   TF-IDF (2-gram)  Logistic Regression  0.973118  0.977169  1.000000   
+10  TF-IDF (2-gram)                  SVM  0.983871  0.986175  1.000000   
+11  TF-IDF (2-gram)        Random Forest  0.962366  0.968326  1.000000   
+
+    Precision  
+0    0.955357  
+1    0.922414  
+2    0.981651  
+3    0.930435  
+4    0.914530  
+5    0.946903  
+6    0.972727  
+7    0.990741  
+8    0.981481  
+9    0.955357  
+10   0.972727  
+11   0.938596  
